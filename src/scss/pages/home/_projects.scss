@@ -1,0 +1,46 @@
+@use "../../utils/functions/"as*;
+@use "../../utils/mixins/"as*;
+
+.projects {
+    h2 {
+      margin-bottom: rem(36);
+    }
+
+  .btn {
+    margin-inline: 0;
+  }
+
+  &__list {
+    display: grid;
+    grid-template-columns: repeat(4, 400px);
+    grid-auto-rows: 1fr;
+    align-items: stretch;
+    gap: 16px;
+    max-width: 1380px;
+    width: 100%;
+    margin-left: rem(60);
+    padding-block: rem(54) rem(36);
+    border-bottom: 1px solid var(--color-gray-250);
+    overflow-x: scroll;
+  }
+
+  &__item {
+    position: relative;
+  }
+
+  &__content {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    padding: 0 rem(24) rem(22);
+  }
+
+  &__name {
+    margin-bottom: 8px;
+  }
+  &__name,
+  .date {
+    color: var(--color-gray-100);
+  }
+}
