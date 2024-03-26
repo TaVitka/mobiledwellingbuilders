@@ -1,0 +1,22 @@
+@use "../utils/functions/"as*;
+@use "../utils/mixins/"as*;
+
+.about {
+  padding: rem(128) 0 rem(86);
+
+  &__inner {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  &__intro {
+    max-width: 573px;
+    width: 100%;
+    margin-right: rem(30);
+  }
+
+  h2 {
+    margin-bottom: rem(36);
+  }
+}

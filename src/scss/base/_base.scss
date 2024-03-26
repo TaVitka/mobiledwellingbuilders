@@ -16,7 +16,7 @@ body {
   line-height: 1.5;
   letter-spacing: 0;
   color: var(--color-gray-700);
-  background-color: var(--color-white);
+  background-color: var(--color-gray-100);
   font-optical-sizing: auto;
 
   &__body {
@@ -30,7 +30,7 @@ body {
 }
 
 section {
-  padding: rem(88) 0;
+  padding: rem(86) 0;
 
   @include media(tablet) {
     padding: rem(44) 0;
@@ -50,10 +50,6 @@ section {
   grid-template-rows: 1fr auto;
   min-height: var(--vh);
 }
-
-//.main {
-//  padding-top: var(--header-height);
-//}
 
 #form-request {
   position: fixed;
