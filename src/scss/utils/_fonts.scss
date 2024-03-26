@@ -1,0 +1,6 @@
+@use "./mixins/font-face"as *;
+
+@include font-ttf("Avenir Next Cyr", "../fonts/AvenirNextCyr-Light", 300, normal);
+@include font-ttf("Avenir Next Cyr", "../fonts/AvenirNextCyr-Regular", 400, normal);
+@include font-ttf("Avenir Next Cyr", "../fonts/AvenirNextCyr-Medium", 500, normal);
+@include font-ttf("Avenir Next Cyr", "../fonts/AvenirNextCyr-Demi", 600, normal);
