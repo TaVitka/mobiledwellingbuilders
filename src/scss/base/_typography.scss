@@ -1,0 +1,91 @@
+@use "../utils/functions/"as*;
+@use "../utils/mixins/"as*;
+
+h1,
+h2,
+h3 {
+  overflow: hidden;
+  font-family: var(--font-family-primary);
+  color: var(--color-dark);
+}
+
+h1,
+h2 {
+  font-weight: var(--fw-400);
+}
+
+h1 {
+  font-size: clamp(42px, 1rem + 1vi, 64px);
+  line-height: 1.19;
+}
+
+h2 {
+  font-size: clamp(34px, 1rem + 1vi, 56px);
+  line-height: 1.23;
+}
+
+h3 {
+  font-size: clamp(18px, 1rem + 1vi, 24px);
+  line-height: 1.5;
+  font-weight: var(--fw-700);
+}
+
+p,
+.desc {
+  line-height: 1.4;
+  font-weight: var(--fw-300);
+  color: var(--color-dark);
+}
+
+p,
+b {
+  font-size: clamp(18px, 0.5rem + 1vi, 20px);
+}
+
+.desc {
+  font-size: 16px;
+}
+
+.accent {
+  font-size: clamp(42px, 1rem + 1vi, 64px);
+  line-height: 1;
+  font-weight: var(--fw-400);
+  color: var(--color-dark)
+}
+
+a {
+  font-size: 16px;
+  line-height: 1.23;
+  font-weight: var(--fw-450);
+  color: var(--color-dark);
+}
+
+b {
+  line-height: 1.4;
+  font-weight: var(--fw-700);
+  color: var(--color-dark);
+}
+
+time {
+  display: inline-block;
+  font-size: 16px;
+  line-height: 1.4;
+  font-weight: var(--fw-300);
+  color: var(--color-gray-600);
+}
+
+input,
+textarea,
+.copyright {
+  font-size: 16px;
+  line-height: 1.4;
+  font-weight: var(--fw-300);
+  color: var(--color-dark);
+}
+
+input,
+textarea {
+  ::placeholder {
+    color: var(--color-gray-200);
+  }
+}

@@ -1,0 +1,35 @@
+/* stylelint-disable alpha-value-notation */
+/* stylelint-disable color-function-notation */
+
+:root {
+  --content-width: 1320px;
+  --container-offset: 16px;
+  --container-width: calc(var(--content-width) + (var(--container-offset) * 2));
+
+  // font-family
+  --font-family-primary: "Avenir Next Cyr", sans-serif;
+
+  // font-weight
+  --fw-300: 300;
+  --fw-400: 400;
+  --fw-500: 500;
+  --fw-600: 600;
+  --fw-700: 700;
+
+  // color
+  --color-white: #fff;
+  --color-black: #111111;
+
+  --color-dark: #312d2b;
+
+  --color-gray-100: #fcfcfa;
+  --color-gray-200: #b5aba1;
+  --color-brown-224: #b5aba13d;
+
+  //  radius
+  --radius-main: 100px;
+
+  //gradient
+  --gradient-main: linear-gradient(180deg, rgba(0, 0, 0, 0.86) 8.21%, rgba(0, 0, 0, 0.42) 25.27%, rgba(0, 0, 0, 0.64) 81.5%, rgba(0, 0, 0, 0.9) 100%);
+  --gradient-secondary: linear-gradient(180deg, rgba(0, 0, 0, 0) 70.04%, rgba(0, 0, 0, 0.57) 84.26%, rgba(0, 0, 0, 0.76) 100%);
+}
