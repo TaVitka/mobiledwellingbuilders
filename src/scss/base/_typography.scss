@@ -12,10 +12,11 @@ h3 {
 h1,
 h2 {
   font-weight: var(--fw-400);
+  color: var(--color-gray-100);
 }
 
 h1 {
-  font-size: clamp(42px, 1rem + 1vi, 64px);
+  font-size: clamp(42px, 3.5rem + 1vi, 64px);
   line-height: 1.19;
 }
 
@@ -47,7 +48,7 @@ b {
 }
 
 .accent {
-  font-size: clamp(42px, 1rem + 1vi, 64px);
+  font-size: clamp(42px, 3rem + 1vi, 64px);
   line-height: 1;
   font-weight: var(--fw-400);
   color: var(--color-dark)
