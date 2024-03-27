@@ -8,11 +8,15 @@
   padding: 20px 0;
   width: 100%;
   background-color: transparent;
-  transition-property: transform, padding;
+  transition-property: transform, padding, background-color;
   transition-duration: 0.15s;
 
   &.hide {
     transform: translateY(-100%);
+  }
+
+  &.scroll {
+    background-color: var(--color-dark);
   }
 
   @include media(tablet) {
