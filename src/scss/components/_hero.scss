@@ -25,4 +25,39 @@
   h1 {
     margin-bottom: rem(36);
   }
+
+  &__subtitle {
+    margin-bottom: rem(195);
+    color: var(--color-gray-100);
+  }
+
+  &__links {
+    display: flex;
+    justify-content: space-between;
+    max-width: 1320px;
+    width: 100%;
+  }
+
+  &__link {
+    a {
+      color: var(--color-gray-100);
+      border-bottom: 1px solid transparent;
+      transition: border-bottom 0.3s ease-in-out;
+
+      &:hover {
+        border-bottom: 1px solid var(--color-gray-100);
+      }
+    }
+  }
+
+  &--pages {
+    .hero__inner {
+      min-height: 650px;
+      padding: rem(195) 0 rem(36);
+    }
+
+    h1 {
+      margin-bottom: rem(16);
+    }
+  }
 }
