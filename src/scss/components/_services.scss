@@ -49,4 +49,10 @@
   .desc {
     color: var(--color-gray-100);
   }
+
+  &__link {
+    position: absolute;
+    inset: 0;
+    z-index: 2;
+  }
 }
