@@ -46,6 +46,15 @@
     border-radius: var(--radius-main);
   }
 
+  &__object {
+    margin-bottom: 8px;
+    color: var(--color-gray-100);
+  }
+
+  &__date {
+
+  }
+
   .desc {
     color: var(--color-gray-100);
   }
@@ -54,5 +63,9 @@
     position: absolute;
     inset: 0;
     z-index: 2;
+  }
+
+  &--projects {
+    padding: rem(86) 0;
   }
 }
