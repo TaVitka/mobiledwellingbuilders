@@ -26,6 +26,80 @@
     width: 100%;
     margin: 0;
   }
+// for modular section of the projects page
+  &__block {
+    &:not(:last-of-type) {
+      margin-bottom: rem(48);
+    }
+
+    h2 {
+      position: relative;
+      width: fit-content;
+      margin-bottom: 0;
+      padding-left: 0;
+      transition-property: padding-left, margin-bottom;
+      transition-duration: 0.6s;
+      transition-timing-function: ease-in-out;
+      cursor: pointer;
+
+      &::before {
+        content: "";
+        position: absolute;
+        top: 50%;
+        left: 0;
+        height: 2px;
+        width: 76px;
+        background-color: var(--color-dark);
+        transform: translateY(-50%) translateX(-100%);
+
+        transition-property: transform;
+        transition-duration: 0.4s;
+        transition-timing-function: ease-in;
+      }
+    }
+
+    h2:hover {
+      margin-bottom: 16px;
+      padding-left: 100px;
+      transition-duration: 0.4s;
+
+      &::before {
+        background-color: var(--color-dark);
+        transform: translateY(-50%) translateX(0);
+        transition-duration: 0.6s;
+      }
+    }
+
+    .about__content {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: rem(48);
+      max-height: 0;
+      opacity: 0;
+      overflow: hidden;
+      transition-property: max-height, opacity;
+      transition-duration: 0.2s;
+      transition-timing-function: ease-in-out;
+      transition-delay: 0.4s;
+
+      img {
+        opacity: 0;
+        transition: opacity 1.2s ease-in-out;
+      }
+    }
+
+    h2:hover + .about__content {
+      max-height: 1000px;
+      visibility: visible;
+      opacity: 1;
+      transition-duration: 0.8s;
+
+      img {
+        opacity: 1;
+      }
+    }
+  }
 
   &--services {
     padding: rem(48) 0;
@@ -39,5 +113,9 @@
     .about__intro {
       max-width: 722px;
     }
+  }
+
+  &--hovered {
+    padding: rem(56) 0;
   }
 }
