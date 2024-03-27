@@ -1,0 +1,39 @@
+@use "../../utils/functions/"as*;
+@use "../../utils/mixins/"as*;
+
+.care {
+  h2 {
+    margin-bottom: 12px;
+  }
+
+  &__desc {
+    margin-bottom: rem(48);
+  }
+
+  &__items {
+    display: flex;
+    margin-bottom: rem(48);
+  }
+
+  &__item {
+    max-width: 660px;
+    width: 100%;
+
+    &:not(:last-of-type) {
+      padding-right: rem(48);
+    }
+
+    &:last-of-type {
+      padding-left: rem(48);
+      border-left: 1px solid var(--color-dark);
+    }
+
+    p:not(:last-of-type) {
+      margin-bottom: rem(16);
+    }
+  }
+
+  h3 {
+    margin-bottom: rem(24);
+  }
+}

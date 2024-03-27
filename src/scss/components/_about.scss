@@ -29,6 +29,11 @@
 
   &--services {
     padding: rem(48) 0;
+
+    &#sheds {
+      padding-bottom: rem(86);
+    }
+
     border-top: 1px solid var(--color-gray-250);
 
     .about__intro {
