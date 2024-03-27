@@ -110,7 +110,7 @@
 }
 
 *[class].swiper {
-  .swiper-button {
+  &-button {
     @include cover-background;
 
     position: static;
@@ -118,20 +118,30 @@
     height: 8px;
   }
 
-  .swiper-button-prev {
+  &-button-prev {
     background-image: url("../images/icons/arrow-prev.svg");
   }
 
-  .swiper-button-next {
+  &-button-next {
     background-image: url("../images/icons/arrow-next.svg");
   }
-//
-//  .swiper-button-disabled {
-//  }
-//
-//  .swiper-pagination {
-//  }
-//
-//  .swiper-pagination-bullet {
-//  }
+
+  &-pagination {
+    bottom: 16px;
+    display: flex;
+    justify-content: space-between;
+    padding: 0 rem(28);
+  }
+
+  &-pagination-bullet {
+    width: rem(90);
+    height: 1px;
+    border-radius: 0;
+    background-color: var(--color-gray-100);
+    opacity: 0.36;
+
+    &-active {
+      opacity: 1;
+    }
+  }
 }

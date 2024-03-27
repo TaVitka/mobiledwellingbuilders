@@ -51,6 +51,8 @@
   }
 
   &--pages {
+    padding-bottom: rem(128);
+
     .hero__inner {
       min-height: 650px;
       padding: rem(195) 0 rem(36);

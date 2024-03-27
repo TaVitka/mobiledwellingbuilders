@@ -25,7 +25,8 @@ h2 {
   line-height: 1.23;
 }
 
-h3 {
+h3,
+.title {
   font-size: clamp(18px, 1rem + 1vi, 24px);
   line-height: 1.5;
   font-weight: var(--fw-600);
