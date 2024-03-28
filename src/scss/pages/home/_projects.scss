@@ -2,9 +2,9 @@
 @use "../../utils/mixins/"as*;
 
 .projects {
-    h2 {
-      margin-bottom: rem(36);
-    }
+  h2 {
+    margin-bottom: rem(36);
+  }
 
   .btn {
     margin-inline: 0;
@@ -39,6 +39,7 @@
   &__name {
     margin-bottom: 8px;
   }
+
   &__name {
     color: var(--color-gray-100);
   }
