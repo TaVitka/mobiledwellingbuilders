@@ -76,13 +76,8 @@
       margin-bottom: 0;
     }
 
-    .services__item {
-      position: relative;
-      display: flex;
-      flex-direction: column;
-      justify-content: flex-end;
-      min-height: 450px;
-      padding: rem(24);
+    .services__img {
+      position: static;
     }
   }
 
@@ -133,6 +128,21 @@
       &::before {
         z-index: -1;
         background: var(--gradient-secondary);
+      }
+    }
+
+    &--projects,
+    &--project,
+    &--contacts {
+      padding: rem(44) 0;
+    }
+
+    &--project {
+      padding-top: 0;
+
+      .services__img {
+        height: auto;
+        aspect-ratio: 5 / 3
       }
     }
   }

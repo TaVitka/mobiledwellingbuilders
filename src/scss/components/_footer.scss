@@ -49,7 +49,7 @@
   }
 
   @include media(tablet) {
-    padding: rem(40) 0 0;
+    padding: 0;
 
     .nav,
     &__bottom {

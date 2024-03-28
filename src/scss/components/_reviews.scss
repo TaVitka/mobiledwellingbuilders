@@ -151,6 +151,14 @@
     &__slides {
       align-items: stretch !important;
     }
+
+    &--single {
+      padding-top: 0;
+
+      .desc {
+        margin-bottom: rem(36);
+      }
+    }
   }
 
   @include media(mobile-l) {
@@ -164,6 +172,42 @@
       grid-template-columns: repeat(2, 1fr);
       width: 80%;
       margin: 0 auto rem(36);
+    }
+
+    &--testimonials {
+      .reviews__content {
+        flex-direction: column;
+      }
+
+      .reviews__desc {
+        max-width: 100%;
+        margin-bottom: rem(36);
+        margin-right: 0;
+      }
+
+      h2 {
+        margin-bottom: 16px;
+      }
+
+      .reviews__items {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: rem(36) 16px;
+      }
+
+      .reviews__item {
+        &:not(:last-of-type) {
+          margin-bottom: 0;
+        }
+      }
+    }
+  }
+
+  @include media(mobile-m) {
+    &--testimonials {
+      .reviews__items {
+        grid-template-columns: 1fr;
+      }
     }
   }
 

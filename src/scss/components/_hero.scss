@@ -84,11 +84,9 @@
 
     h2 {
       margin-bottom: 16px;
-      font-size: clamp(42px, 3.5rem + 1vi, 64px);
-      line-height: 1.19;
+      line-height: 1.2;
       color: var(--color-gray-100);
     }
-
 
     .btn {
       margin: 0;
@@ -132,7 +130,8 @@
       padding: rem(194) 16px rem(86);
     }
 
-    &--pages {
+    &--pages,
+    &--project {
       .hero__inner {
         min-height: 450px;
         padding: rem(194) 16px rem(86);
@@ -159,6 +158,52 @@
 
     &--services {
       padding: 0;
+    }
+
+    &--request {
+      .hero__inner {
+        min-height: 350px;
+        padding: rem(44) 16px;
+        justify-content: center;
+      }
+    }
+
+    &--project {
+      .hero__inner {
+        min-height: 250px;
+        padding-top: rem(100);
+      }
+
+      .hero__content {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        min-height: inherit;
+        padding: 0;
+      }
+
+      h1 {
+        margin-bottom: 24px;
+      }
+    }
+  }
+
+  @include media(mobile-l) {
+    &--project {
+      .hero__links {
+        justify-content: space-between;
+        align-items: flex-end;
+        flex-wrap: nowrap;
+        gap: 16px;
+      }
+
+      .hero__link {
+        width: auto;
+      }
+
+      .title {
+        font-size: 14px;
+      }
     }
   }
 
