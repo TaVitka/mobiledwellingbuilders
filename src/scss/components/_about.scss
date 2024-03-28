@@ -16,8 +16,7 @@
     margin-right: rem(30);
   }
 
-  h2,
-  &__desc:not(:last-of-type) {
+  h2 {
     margin-bottom: rem(36);
   }
 
@@ -26,7 +25,8 @@
     width: 100%;
     margin: 0;
   }
-// for modular section of the projects page
+
+  // for modular section of the projects page
   &__block {
     &:not(:last-of-type) {
       margin-bottom: rem(48);
@@ -112,6 +112,12 @@
 
     .about__intro {
       max-width: 722px;
+    }
+
+    .about__desc {
+      &:not(:last-of-type) {
+        margin-bottom: rem(36);
+      }
     }
   }
 
