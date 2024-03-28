@@ -4,7 +4,6 @@ let options = {
   slidesPerView: 1,
   speed: 700,
   spaceBetween: 20,
-  autoHeight: true,
   autoplay: {
     delay: 200,
   },

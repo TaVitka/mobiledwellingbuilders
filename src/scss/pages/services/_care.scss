@@ -36,4 +36,31 @@
   h3 {
     margin-bottom: rem(24);
   }
+
+  @include media(tablet) {
+    &__desc,
+    &__items {
+      margin-bottom: rem(36);
+    }
+
+    &__items {
+      flex-direction: column;
+    }
+
+    &__item {
+      max-width: 100%;
+
+      &:not(:last-of-type) {
+        padding-right: 0;
+        padding-bottom: rem(36);
+      }
+
+      &:last-of-type {
+        padding-left: 0;
+        padding-top: rem(36);
+        border-left: none;
+        border-top: 1px solid var(--color-dark);
+      }
+    }
+  }
 }

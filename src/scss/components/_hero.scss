@@ -47,6 +47,10 @@
       &:hover {
         border-bottom: 1px solid var(--color-gray-100);
       }
+
+      &:not(:last-of-type) {
+        margin-right: 16px;
+      }
     }
   }
 
@@ -124,19 +128,49 @@
 
   @include media(tablet-wide) {
     &__inner {
-      padding:  rem(194) 16px rem(86);
       min-height: 450px;
+      padding: rem(194) 16px rem(86);
+    }
+
+    &--pages {
+      .hero__inner {
+        min-height: 450px;
+        padding: rem(194) 16px rem(86);
+      }
     }
   }
 
   @include media(tablet) {
     &__inner {
       justify-content: center;
-      padding:  rem(60) 16px;
+      padding: rem(60) 16px;
     }
 
     &__content {
       margin-left: 0;
+    }
+
+    &--pages {
+      .hero__inner {
+        justify-content: flex-end;
+        padding: rem(60) 16px 24px;
+      }
+    }
+
+    &--services {
+      padding: 0;
+    }
+  }
+
+  @include media(mobile-m) {
+    &__links {
+      flex-wrap: wrap;
+      gap: rem(18) 0;
+    }
+
+    &__link {
+      width: 45%;
+      text-align: center;
     }
   }
 }

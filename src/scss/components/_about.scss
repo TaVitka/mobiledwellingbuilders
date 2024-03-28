@@ -153,6 +153,26 @@
       aspect-ratio: 5/2;
     }
 
+    &--services {
+      .about__intro,
+      .about__slider,
+      .about__img {
+        max-width: 100%;
+        width: 100%;
+      }
+
+      &#sheds {
+        padding-bottom: rem(44);
+      }
+    }
   }
 
+  @include media(mobile-m) {
+    &--services {
+      .about__img {
+        height: auto;
+        aspect-ratio: 5/3;
+      }
+    }
+  }
 }
