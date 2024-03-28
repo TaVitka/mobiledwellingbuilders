@@ -112,6 +112,7 @@
 
     .desc {
       margin-bottom: rem(36);
+      color: var(--color-dark);
     }
 
     .btn {
@@ -143,6 +144,12 @@
       .services__img {
         height: auto;
         aspect-ratio: 5 / 3
+      }
+    }
+
+    &--contacts {
+      h2 {
+        width: 100%;
       }
     }
   }
