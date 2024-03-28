@@ -19,12 +19,14 @@
   }
 
   &__item {
-    position: relative;
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-end;
-    min-height: 450px;
-    padding: rem(24);
+    article {
+      position: relative;
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-end;
+      min-height: 450px;
+      padding: rem(24);
+    }
   }
 
   &__img {

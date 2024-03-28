@@ -24,8 +24,16 @@
     overflow-x: scroll;
   }
 
-  &__item {
+  article {
     position: relative;
+  }
+
+  article {
+    a {
+      position: absolute;
+      inset: 0;
+      z-index: 2;
+    }
   }
 
   &__content {
