@@ -70,4 +70,26 @@
       padding: rem(195) 0 rem(54);
     }
   }
+
+  &--request {
+    .hero__inner {
+      min-height: 500px;
+      padding: rem(166) 0 0;
+      justify-content: flex-start;
+    }
+
+    h2 {
+      margin-bottom: 16px;
+      font-size: clamp(42px, 3.5rem + 1vi, 64px);
+      line-height: 1.19;
+      color: var(--color-gray-100);
+    }
+
+
+    .btn {
+      margin: 0;
+      color: var(--color-gray-100) !important;
+      border-bottom-color: var(--color-gray-100);
+    }
+  }
 }
