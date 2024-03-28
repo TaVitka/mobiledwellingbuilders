@@ -102,4 +102,23 @@
       margin: 0;
     }
   }
+
+  &--contacts {
+    h2 {
+      width: 90%;
+      margin-bottom: 12px;
+      padding-top: rem(36);
+      line-height: 1.19;
+      letter-spacing: rem(0.8);
+      border-top: 1px solid var(--color-gray-250);
+    }
+
+    .desc {
+      margin-bottom: rem(36);
+    }
+
+    .btn {
+      margin: 0;
+    }
+  }
 }
