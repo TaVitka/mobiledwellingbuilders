@@ -18,7 +18,7 @@
     grid-auto-rows: 1fr;
     align-items: stretch;
     gap: 16px;
-    max-width: 1380px;
+    max-width: 96vw;
     width: 100%;
     margin-left: rem(60);
     padding-block: rem(54) rem(36);
@@ -52,6 +52,13 @@
 
   &__name {
     color: var(--color-gray-100);
+  }
+
+  @include media(desktop-l, min) {
+    &__list {
+      max-width: 1350px;
+      margin: 0 auto;
+    }
   }
 
   @include media(tablet) {

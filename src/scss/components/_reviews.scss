@@ -60,7 +60,7 @@
 
   &__slider-arrows {
     position: absolute;
-    bottom: 0;
+    bottom: -8px;
     right: 0;
     display: flex;
     gap: 24px;
@@ -86,10 +86,6 @@
     &:not(:last-of-type) {
       margin-bottom: rem(35);
     }
-  }
-
-  &--home {
-    padding: rem(86) 0 rem(60);
   }
 
   &--testimonials {
