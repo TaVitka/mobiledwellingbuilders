@@ -20,9 +20,10 @@
   }
 
   .nav__link {
-   color: var(--color-dark);
+    color: var(--color-dark);
 
-    &:hover {
+    &:hover,
+    &.true {
       border-color: var(--color-dark);
     }
   }

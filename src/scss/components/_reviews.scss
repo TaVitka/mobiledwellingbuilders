@@ -38,15 +38,15 @@
   }
 
   &__slider {
-    margin: 0 auto;
-    padding-bottom: 20px;
+    max-width: 604px;
+    width: 100%;
+    margin-inline: auto 0;
+    //padding-bottom: 20px;
   }
 
   &__slide {
     p {
-      width: 85%;
       margin-bottom: 16px;
-      padding-right: 100px;
     }
   }
 
@@ -86,6 +86,10 @@
     &:not(:last-of-type) {
       margin-bottom: rem(35);
     }
+  }
+
+  &--home {
+    padding: rem(86) 0 rem(60);
   }
 
   &--testimonials {

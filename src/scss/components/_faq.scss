@@ -1,26 +1,10 @@
 @use "../utils/functions/"as*;
 @use "../utils/mixins/"as*;
 
-.faq-page {
-  .logo__img {
-    filter: invert(100%) sepia(0%) saturate(0%) hue-rotate(263deg) brightness(102%) contrast(103%);
-  }
-
-  .nav__link {
-    color: var(--color-dark);
-
-    &:hover,
-    &.true {
-      border-bottom: 1px solid var(--color-dark);
-    }
-  }
-}
-
 .faq {
-    padding: rem(176) 0 rem(86);
 
   h1 {
-    margin-bottom:  rem(48);
+    margin-bottom: rem(48);
     font-size: clamp(34px, 3.5rem + 1vi, 56px);
     line-height: 1.23;
     color: var(--color-dark);

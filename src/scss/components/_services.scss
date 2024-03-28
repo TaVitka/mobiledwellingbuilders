@@ -64,13 +64,42 @@
   }
 
   &--projects,
-  &--project {
+  &--project,
+  &--contacts {
     padding: rem(86) 0;
   }
 
   &--project {
     .services__grid {
       margin-bottom: 0;
+    }
+
+    .services__item {
+      position: relative;
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-end;
+      min-height: 450px;
+      padding: rem(24);
+    }
+  }
+
+  &--contacts {
+    h2 {
+      width: 90%;
+      margin-bottom: 12px;
+      padding-top: rem(36);
+      line-height: 1.19;
+      letter-spacing: rem(0.8);
+      border-top: 1px solid var(--color-gray-250);
+    }
+
+    .desc {
+      margin-bottom: rem(36);
+    }
+
+    .btn {
+      margin: 0;
     }
   }
 }

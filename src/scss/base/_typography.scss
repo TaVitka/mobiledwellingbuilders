@@ -33,14 +33,16 @@ h3,
 }
 
 p,
-.desc {
+.desc,
+li {
   line-height: 1.4;
   font-weight: var(--fw-300);
   color: var(--color-dark);
 }
 
 p,
-b {
+b,
+li {
   font-size: clamp(18px, 0.5rem + 1vi, 20px);
 }
 
@@ -52,7 +54,7 @@ b {
   font-size: clamp(42px, 3rem + 1vi, 64px);
   line-height: 1;
   font-weight: var(--fw-400);
-  color: var(--color-dark)
+  color: var(--color-dark);
 }
 
 a,
