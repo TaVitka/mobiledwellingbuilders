@@ -2,6 +2,8 @@
 @use "../../utils/mixins/"as*;
 
 .projects {
+  overflow: hidden;
+
   h2 {
     margin-bottom: rem(36);
   }
@@ -50,5 +52,27 @@
 
   &__name {
     color: var(--color-gray-100);
+  }
+
+  @include media(tablet) {
+    h2 {
+      margin-bottom: rem(36/2);
+    }
+
+    &__list {
+      margin-left: rem(36);
+      padding: rem(36) 0;
+    }
+  }
+
+  @include media(mobile-s) {
+    &__list {
+      grid-template-columns: repeat(4, 250px);
+      margin-left: 16px;
+    }
+
+    &__img {
+      height: auto;
+    }
   }
 }

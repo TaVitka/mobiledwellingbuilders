@@ -121,4 +121,22 @@
       font-size: 14px;
     }
   }
+
+  @include media(tablet-wide) {
+    &__inner {
+      padding:  rem(194) 16px rem(86);
+      min-height: 450px;
+    }
+  }
+
+  @include media(tablet) {
+    &__inner {
+      justify-content: center;
+      padding:  rem(60) 16px;
+    }
+
+    &__content {
+      margin-left: 0;
+    }
+  }
 }

@@ -3,7 +3,7 @@ import Swiper, { Navigation, Pagination, EffectFade, Scrollbar } from 'swiper';
 let options = {
   slidesPerView: 1,
   speed: 700,
-  gap: 20,
+  spaceBetween: 20,
   autoHeight: true,
   autoplay: {
     delay: 200,
@@ -24,7 +24,8 @@ const services3 = new Swiper('.services__slider3', options);
 const swiperReviews = new Swiper('.reviews__slider', {
   slidesPerView: 1,
   speed: 700,
-  gap: 100,
+  spaceBetween: 100,
+  autoHeight: true,
   autoplay: {
     delay: 200,
   },

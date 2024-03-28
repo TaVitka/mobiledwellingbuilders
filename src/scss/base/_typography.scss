@@ -92,3 +92,14 @@ textarea {
     color: var(--color-gray-200);
   }
 }
+
+@include media(tablet) {
+  h1,
+  .accent {
+    font-size: clamp(40px, 2.5rem + 1vi, 52px);
+  }
+
+  h2 {
+    font-size: clamp(32px, 2rem + 1vi, 44px);
+  }
+}

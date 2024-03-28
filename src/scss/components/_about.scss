@@ -124,4 +124,35 @@
   &--hovered {
     padding: rem(56) 0;
   }
+
+  @include media(tablet) {
+    padding: rem(44) 0;
+
+    br {
+      display: none;
+    }
+
+    &__inner {
+      flex-direction: column;
+    }
+
+    &__intro,
+    &__image,
+    &__img {
+      max-width: 100%;
+      width: 100%;
+    }
+
+    &__intro {
+      margin-right: 0;
+      margin-bottom: rem(36);
+    }
+
+    &__img {
+      height: auto;
+      aspect-ratio: 5/2;
+    }
+
+  }
+
 }
