@@ -61,7 +61,14 @@
     z-index: 2;
   }
 
-  &--projects {
+  &--projects,
+  &--project {
     padding: rem(86) 0;
+  }
+
+  &--project {
+    .services__grid {
+      margin-bottom: 0;
+    }
   }
 }

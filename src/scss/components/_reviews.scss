@@ -97,4 +97,19 @@
       margin-bottom: 16px;
     }
   }
+
+  &--single {
+    text-align: center;
+
+    .reviews__author {
+      margin-bottom: 24px;
+      padding-right: 0;
+    }
+
+    .desc {
+      max-width: 800px;
+      width: 100%;
+      margin: 0 auto rem(56);
+    }
+  }
 }
