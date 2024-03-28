@@ -1,0 +1,26 @@
+@use "../../utils/functions/"as*;
+@use "../../utils/mixins/"as*;
+
+.contacts {
+  &__items {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__content {
+    max-width: 597px;
+    width: 100%;
+  }
+
+  &__info {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    &:not(:last-of-type) {
+      margin-bottom: rem(36);
+      padding-bottom: rem(36);
+      border-bottom: 1px solid var(--color-gray-250);
+    }
+  }
+}
