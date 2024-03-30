@@ -41,7 +41,6 @@
     max-width: 604px;
     width: 100%;
     margin-inline: auto 0;
-    //padding-bottom: 20px;
   }
 
   &__slide {
@@ -145,7 +144,9 @@
     }
 
     &__slides {
-      align-items: stretch !important;
+      &.swiper-wrapper {
+        align-items: stretch;
+      }
     }
 
     &--single {

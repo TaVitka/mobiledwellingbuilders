@@ -22,4 +22,8 @@
   @include media(tablet) {
     background-color: var(--color-dark);
   }
+
+  @include media(mobile-l) {
+    padding: 10px 0;
+  }
 }

@@ -90,11 +90,11 @@
 
     .btn {
       margin: 0;
-      color: var(--color-gray-100) !important;
+      color: var(--color-gray-100);
       border-bottom-color: var(--color-gray-100);
 
       &:hover {
-        color: var(--color-gray-100) !important;
+        color: var(--color-gray-100);
         border: 1px solid var(--color-gray-100);
       }
     }
@@ -115,7 +115,7 @@
       gap: rem(86);
     }
 
-    .title {
+    .name {
       color: var(--color-gray-100);
     }
 
@@ -201,7 +201,7 @@
         width: auto;
       }
 
-      .title {
+      .name {
         font-size: 14px;
       }
     }

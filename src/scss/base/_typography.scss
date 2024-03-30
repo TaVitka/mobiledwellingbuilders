@@ -5,8 +5,6 @@ h1,
 h2,
 h3 {
   overflow: hidden;
-  font-family: var(--font-family-primary);
-  color: var(--color-dark);
 }
 
 h1,
@@ -23,17 +21,18 @@ h1 {
 h2 {
   font-size: clamp(34px, 3.5rem + 1vi, 56px);
   line-height: 1.23;
+  color: var(--color-dark);
 }
 
 h3,
-.title {
+.name {
   font-size: clamp(18px, 2rem + 1vi, 24px);
   line-height: 1.5;
   font-weight: var(--fw-600);
+  color: var(--color-dark);
 }
 
 p,
-.desc,
 li {
   line-height: 1.4;
   font-weight: var(--fw-300);
@@ -62,12 +61,6 @@ button {
   font-size: 16px;
   line-height: 1.23;
   font-weight: var(--fw-400);
-  color: var(--color-dark);
-}
-
-b {
-  line-height: 1.4;
-  font-weight: var(--fw-600);
   color: var(--color-dark);
 }
 
@@ -104,7 +97,7 @@ textarea {
   }
 
   h3,
-  .title {
+  .name {
     font-size: clamp(18px, 1rem + 1vi, 20px);
   }
 }

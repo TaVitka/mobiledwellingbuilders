@@ -39,6 +39,10 @@
       transition-property: transform;
       transition-duration: 0.4s;
     }
+
+    @include media(mobile-s) {
+      padding: 16px;
+    }
   }
 
   &__list {

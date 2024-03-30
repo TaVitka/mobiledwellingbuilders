@@ -19,6 +19,7 @@ let options = {
 const services1 = new Swiper('.services__slider1', options);
 const services2 = new Swiper('.services__slider2', options);
 const services3 = new Swiper('.services__slider3', options);
+const services4 = new Swiper('.services__slider4', options);
 
 const swiperReviews = new Swiper('.reviews__slider', {
   slidesPerView: 1,
